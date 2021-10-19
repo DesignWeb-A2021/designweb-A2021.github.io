@@ -1,0 +1,57 @@
+#settings i{
+    position: absolute; 
+    left: 20px;
+    font-size: 2em;
+    color: #2966c2;
+    cursor: pointer;
+}
+#settings i:hover{
+    color: #c5d2e7;
+}
+
+#icon_periode {
+    top: 20px;   
+}
+#icon_calendrier {
+    top: 80px;   
+}
+#icon_download {
+    bottom: 20px;
+}
+
+#settings .selected {
+    color: #c5d2e7;
+}
+
+.hide {
+    display: none;
+}
+
+.tooltip .tooltiptext {
+    background-color: rgb(65, 65, 65);
+    color: #c5d2e7;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    opacity: 0;
+
+    position: absolute;
+    left: 70px;
+    z-index: 1;
+    transition: all 200ms;
+}
+
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+}
+
+.tooltip_periode .tooltiptext {
+    top: 20px;
+}
+.tooltip_date .tooltiptext {
+    top: 80px;
+}
+.tooltip_download .tooltiptext {
+    bottom: 20px;
+}
+
