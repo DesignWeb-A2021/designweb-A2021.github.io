@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Flexbox CheatSheet</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        
+    </head>
+
+    <body>
+
+        <div id="main_container">
+
+            <div id="options">
+                
+                <label for="input_number">Nb boites</label>
+                <input id="input_number" name="input_number" type="number" min="1" max="10" value="1">
+
+                <label for="select_valeur">Valeur</label>
+                <select id="select_valeur" name="select_valeur">
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-evenly">space-evenly</option>
+                </select>
+
+                <button onclick="GenererCube()">Générer</button>
+            </div>
+            
+            <div id="colonne_resultat">
+                <div id="resultat"></div>
+            </div>
+            
+            
+
+        </div>
+        
+        <a href="../../Exercice 08 - Flexbox CheatSheet.zip">Télécharger l'exercices</a>
+
+    </body>
+    <script defer src="scripts.js"></script>
+</html>
