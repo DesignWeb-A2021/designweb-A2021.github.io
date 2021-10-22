@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Mes tâches</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+        <script defer src="js/todo.js"></script>
+
+    </head>
+
+    <body>
+        <div id="conteneurPrincipale">
+            <div id="maTodo">
+                <h1>Ma liste de tâches</h1>
+                <input type="text" id="saisieTache" placeholder="Entrez la description de la tâche">
+                <button onclick="AjouterTache()">Ajouter</button>
+
+                <h2 id="titreEnCours" class="invisible">À faire</h2>
+                <ul id="affichageTachesEnCours"></ul>
+                
+                <div id="aucuneTache">
+                    <h2>Aucune tâches en cours</h2>
+                    <img src="images/relax.png" width="300px">
+                </div>
+                
+            </div>
+        </div>
+    </body>
+
+</html>

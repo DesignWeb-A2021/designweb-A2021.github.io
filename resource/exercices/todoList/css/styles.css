@@ -1,0 +1,90 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0px;
+  }
+
+#conteneurPrincipale {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+    height: 100%;
+
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+input[type=text] {
+    padding:10px;
+    margin:10px 0;
+    border:0;
+    border-radius:5px;
+    box-shadow:0 0 15px 4px rgba(63,81,181,0.4);
+    width: 100%;
+  }
+
+button {
+    appearance:none;
+    -webkit-appearance:none;
+
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+    cursor: pointer;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#maTodo {
+    width: 400px;
+    padding: 20px;
+    border:0;
+    border-radius:10px;
+    box-shadow:0 0 15px 4px rgba(63,81,181,0.4);
+    background-color: rgba(255,255,255,0.5);
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+#affichageTachesEnCours {
+    list-style-type: none;
+}
+
+.tache {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: lightgray;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+}
+.tache:hover {
+    background-color:#8d99db;
+}
+
+.invisible {
+    display: none;
+}
+
+#aucuneTache {
+    padding-top: 50px;
+    text-align: center;
+    
+}
