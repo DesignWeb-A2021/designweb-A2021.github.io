@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Exercice 10 - Le jeu de Simon</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script defer src="js/simon.js"></script>
+    </head>
+
+    <body>
+
+        <div id="conteneur_principal">
+            
+            <header>
+                <h1>Le jeu de Simon</h1>
+            </header>
+            
+            <section id="conteneur_jeux">
+                <div id="conteneur_case">
+                    <div class="case_jeux case_jaune" data-value="jaune" onclick="CliquerTuile(this)"></div>
+                    <div class="case_jeux case_bleu" data-value="bleu" onclick="CliquerTuile(this)"></div>
+                    <div class="case_jeux case_verte" data-value="vert" onclick="CliquerTuile(this)"></div>
+                    <div class="case_jeux case_rouge" data-value="rouge" onclick="CliquerTuile(this)"></div>
+                </div>
+            </section>
+            
+
+            <section id="conteneur_configuration">
+                <button class="bouton_demarrer" onclick="DebuterPartie(this)">Nouvelle partie</button>
+                <span class="information_tour hidden"></span>
+                <span class="information hidden"></span>
+            </section>
+
+        </div>
+        
+        
+
+
+    </body>
+
+</html>

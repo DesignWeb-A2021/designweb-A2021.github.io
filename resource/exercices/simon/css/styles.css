@@ -1,0 +1,89 @@
+html, body {
+    margin: 0px;
+    height: 100vh;
+}
+
+#conteneur_principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 150px;
+    grid-template-areas: 
+        "header"
+        "jeux"
+        "configuration";
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+}
+header > h1 {
+    font-size: 3em;
+}
+
+#conteneur_jeux {
+    display: flex;
+    justify-content: center;
+}
+
+#conteneur_case {
+    grid-area: jeux;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px;
+    grid-gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.case_jeux {
+    cursor: pointer;
+}
+
+.case_jaune {
+    background-color: #ffb900;
+}
+.case_jaune:hover,
+.case_jaune.activer {
+    background-color: #ffca3d;
+    transform: scale(1.1);
+}
+
+.case_bleu {
+    background-color: #00a4ef;
+}
+.case_bleu:hover,
+.case_bleu.activer {
+    background-color: #139ddd;
+}
+
+.case_verte {
+    background-color: #7fba00;
+}
+.case_verte:hover,
+.case_verte.activer {
+    background-color: #8cc218;
+}
+
+.case_rouge {
+    background-color: #f25022;
+}
+.case_rouge:hover,
+.case_rouge.activer {
+    background-color: #ff451a;
+}
+
+
+#conteneur_configuration {
+    grid-area: configuration;
+    text-align: center;
+}
+
+.bouton_demarrer {
+    height: 38px;
+    padding: 0 30px;
+}
+
+.hidden {
+    display: none !important;
+}
