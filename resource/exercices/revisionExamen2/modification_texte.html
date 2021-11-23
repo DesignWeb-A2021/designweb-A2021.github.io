@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Modification de texte</title>
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/modification_texte.css">
+
+        <script defer src="js/modification_texte.js"></script>
+    </head>
+
+    <body>
+        <div id="conteneur_principale">
+            <div id="conteneur_contenu">
+                
+                <header>
+                    <h1 id="titre_principale" class="texte_centre">Modification de texte</h1>
+                </header>
+                
+                <section>
+                    <div id="conteneur_texte_01" class="zone_texte surligner">
+                        <span id="texte_afficher_01">Zone #1</span>
+                    </div>
+
+                    <div id="conteneur_texte_02" class="zone_texte">
+                        <span id="texte_afficher_02">Zone #2</span>
+                    </div>    
+                </section>
+                
+                <section>
+                    <h2 class="texte_centre">Configuration du texte</h2>
+                    <label for="select_texte_modifier">Texte à modifier</label>
+                    <select name="select_texte_modifier" id="select_texte_modifier">
+                        <option value="texte_afficher_01" selected>Zone #1</option>
+                        <option value="texte_afficher_02">Zone #2</option>
+                    </select>
+
+                    <label for='input_texte_afficher'>Texte à afficher</label>
+                    <input type='text' id='input_texte_afficher' name='input_texte_afficher' value="Zone #1">
+
+                    <label for='input_taille_police'>Taille de la police</label>
+                    <input type='number' id='input_taille_police' name='input_taille_police' min="1" max="80" value="40">
+
+                    <label for='input_couleur'>Couleur du texte</label>
+                    <input type='color' id='input_couleur' name='input_couleur' value="#000000">
+                </section>
+                
+            </div>
+        </div>
+    </body>
+
+</html>

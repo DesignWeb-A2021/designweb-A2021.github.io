@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Modification de texte</title>
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/modification_texte.css">
+        <link rel="stylesheet" href="css/manipulation_string.css">
+
+        <script defer src="js/manipulation_string.js"></script>
+    </head>
+
+    <body>
+        <div id="conteneur_principale">
+            <div id="conteneur_contenu">
+                
+                <header>
+                    <h1 id="titre_principale" class="texte_centre">Manipulation de string</h1>
+                </header>
+                
+                <section>
+                    <div id="conteneur_texte_01" class="zone_texte surligner">
+                        <h2><span id="texte_afficher_01">Zone #1</span></h2>
+                    </div>  
+                </section>
+                
+                <section>
+                    <h2 class="texte_centre">Configuration du texte</h2>
+
+                    <label for='input_texte_afficher'>Texte à afficher</label>
+                    <input type='text' id='input_texte_afficher' name='input_texte_afficher' value="Zone #1">
+
+                    <button type="button" id="afficher_premiere_lettre">Afficher première lettre</button>
+                    <button type="button" id="afficher_nopmbre_caractere">Afficher le nombre de caractères</button>
+                </section>
+                
+            </div>
+        </div>
+    </body>
+
+</html>
