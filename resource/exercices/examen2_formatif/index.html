@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Examen 2 - Formatif</title>
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/formulaire.css">
+
+        <script defer src="js/validation.js"></script>
+    </head>
+
+    <body>
+
+        <main id="conteneur_principale">
+
+            <section id="conteneur_formulaire">
+
+                <h1 id="titre_formulaire">Fiche de dégustation</h1>
+
+                <form id="fiche_degustation" action="action.html" method="post" onsubmit="return FormulaireEstValide()">
+
+                    <div class="ligne_formulaire">
+                        <label for='nom_biere'>Nom de la bière</label>
+                        <input type='text' id='nom_biere' name='nom_biere'>
+                        <small></small>
+                    </div>
+                     
+                    <div class="ligne_formulaire">
+                        <label for='identification_biere'>Numéro d'identification</label>
+                        <input type='text' id='identification_biere' name='identification_biere'>
+                        <small></small>    
+                    </div>
+                     
+
+                    <fieldset>
+                        <legend>Apparence</legend>
+
+                        <label for='couleur'>Couleur</label>
+                        <div id="palette_couleur">
+                            <span id="couleur_nom">Blonde</span>
+                        </div>
+                        <input type='range' id='couleur' name='couleur' min="0" max="5" step="1" value="2">  
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Saveur</legend>
+
+                        <span class="titre_section">Saveur du houblon</span>
+
+                        <div>
+                            <input type="checkbox" name="saveur_houblon_agrumes" id="saveur_houblon_agrumes" class="saveur_houblon">
+                            <label for="saveur_houblon_agrumes">Agrumes</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" name="saveur_houblon_epices" id="saveur_houblon_epices" class="saveur_houblon">
+                            <label for="saveur_houblon_epices">Épices</label>
+                        </div>
+                            
+                        <div>
+                            <input type="checkbox" name="saveur_houblon_fleurs" id="saveur_houblon_fleurs" class="saveur_houblon">
+                            <label for="saveur_houblon_fleurs">Fleurs</label>
+                        </div>
+                            
+                        <div>
+                            <input type="checkbox" name="saveur_houblon_resine" id="saveur_houblon_resine" class="saveur_houblon">
+                            <label for="saveur_houblon_resine">Résine</label>
+                        </div>
+                        <small id="message_saveur_houblon"></small>
+                    </fieldset>    
+
+                    <button type="submit">Soumettre la fiche</button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </body>
+
+</html>
